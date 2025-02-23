@@ -82,8 +82,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    color: #ff6347;
-    outline: 2px solid #ff6347;
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
