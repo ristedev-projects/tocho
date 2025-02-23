@@ -49,6 +49,10 @@ body {
     line-height: 1.6;
 }
 
+/* -----------------------------------------
+   Navbar
+----------------------------------------- */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -104,34 +108,4 @@ nav a:focus {
     nav a {
         font-size: 14px;
     }
-}
-
-.hero-image {
-    width: 100%;
-    height: 700px;
-    background-image: url('/assets/images/hero.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.text-banner {
-    width: 100%;
-    height: 100px;
-    background-color: #00805F;
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-}
-
-.text-column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-}
-
-/* No icon after the last column */
-.text-column:nth-child(3)::after {
-    background-image: none;
 }

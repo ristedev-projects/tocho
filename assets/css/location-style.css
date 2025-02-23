@@ -1,0 +1,9 @@
+body {
+    background-color: #65b29e;
+    background-image: url('/assets/images/backgrounds/location-background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+}
