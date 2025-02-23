@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
 
   // eleventyConfig.addPassthroughCopy({'static':'.'});
+  eleventyConfig.addPassthroughCopy("assets");
 
   return {
     templateFormats: ['liquid', 'md', 'html'],
