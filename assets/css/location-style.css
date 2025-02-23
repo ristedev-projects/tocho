@@ -1,9 +1,102 @@
-body {
+body, html {
     background-color: #65b29e;
     background-image: url('/assets/images/backgrounds/location-background.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100vh;
+    height: 100%;
     color: white;
+    margin: 0;
+}
+
+.location-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: #FF1E00;
+    text-align: center;
+    max-width: 1200px;
+    margin: 80px auto;
+    min-height: 400px;
+    height: auto; /* Allow height to adjust based on content */
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't overflow */
+}
+
+.location-details {
+    flex: 1;
+    padding-right: 20px;
+    margin-bottom: 0; /* Remove margin-bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location-details h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.location-details p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.location-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.location-buttons .button {
+    background-color: #FF1E00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.map {
+    flex: 1;
+    text-align: center;
+}
+
+.map iframe {
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .location-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 15px;
+        margin: 0;
+        min-height: auto;
+    }
+
+    .location-details {
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+
+    .map {
+        width: 100%;
+        height: 300px;
+        margin: 0 15px;
+
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 300px;
+        margin: 50px 0;
+    }
 }
