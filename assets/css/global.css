@@ -49,13 +49,22 @@ body {
     line-height: 1.6;
 }
 
+/* Navbar */
 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFCBDD;
+    font-family: 'TT Globs Trial', sans-serif;
+}
+
+nav .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1200px;
     padding: 15px 20px;
-    background-color: #FFCBDD;
-    font-family: 'TT Globs Trial', sans-serif;
 }
 
 nav .logo img {
@@ -85,9 +94,14 @@ nav a:focus {
 
 @media (max-width: 768px) {
     nav {
+        padding: 15px;
+    }
+
+    nav .nav-container {
         flex-direction: column;
         align-items: flex-start;
-        padding: 15px;
+        width: 100%;
+        padding: 0;
     }
 
     nav .logo {
@@ -107,5 +121,79 @@ nav a:focus {
         width: 100%;
         padding: 10px;
         text-align: left;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #E7E6D9;
+    color: #FF1E00;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .footer-logo img {
+    max-height: 300px;
+    width: auto;
+}
+
+footer .footer-columns {
+    display: flex;
+    gap: 30px;
+    margin: 50px 0 0 100px;
+}
+
+footer .footer-column h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+footer .footer-column p {
+    font-size: .8rem;
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+
+footer .footer-column a {
+    color: #FF1E00;
+    text-decoration: none;
+}
+
+footer .footer-phone {
+    margin-top: 30px;
+}
+
+footer .footer-column a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        max-width: 400px;
+    }
+
+    footer .footer-logo img {
+        max-height: 200px;
     }
 }
