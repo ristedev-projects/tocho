@@ -145,6 +145,22 @@ footer .footer-logo img {
     width: auto;
 }
 
+footer .ig-icon {
+    height: 45px;
+    width: 45px;
+    padding-top: 5px;
+    margin-bottom: 7px;
+}
+
+footer .fb-icon {
+    height: 55px;
+    width: 55px;
+}
+
+footer .social-link {
+    text-decoration: none !important;
+}
+
 footer .footer-columns {
     display: flex;
     gap: 30px;
