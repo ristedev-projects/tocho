@@ -1,6 +1,6 @@
 ---
 layout: default
-title: welcome
+title: Tocho Fort Wayne | Authentic Mexican Food
 ---
 
 <section class="hero-image"></section>
@@ -9,5 +9,7 @@ title: welcome
     <div class="text-column">flavors for everyone</div>
     <div class="text-column">flavors for everyone</div>
 </section>
-{% include "menu-section.html" %}
-{% include "location-section.html" %}
+{% include "menu.html" %}
+{% include "specials.html" %}
+{% include "about.html" %}
+{% include "location.html" %}
