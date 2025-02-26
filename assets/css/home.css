@@ -77,7 +77,7 @@
     color: #FF1E00;
 }
 
-.view-more {
+.view-more, .join-now {
     text-align: center;
 }
 
@@ -299,4 +299,32 @@
         width: 80%;
         margin-bottom: 20px;
     }
+}
+
+/* -----------------------------------------
+   Call to Action Section
+----------------------------------------- */
+#cta {
+    padding: 5rem 0;
+    background-color: #E7E6D9;
+    color: #FF1E00;
+}
+
+#cta .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#cta img {
+    height: 200px;
+    width: auto;
+    margin: 0 20px;
+}
+
+#cta h1 {
+    font-family: 'Gardez', sans-serif;
+    margin-top: 50px;
+    font-size: 5rem;
 }
