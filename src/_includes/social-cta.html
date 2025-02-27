@@ -1,0 +1,10 @@
+<section id="social-cta">
+    <div class="social-cta-container">
+        <h2>Follow on @tocho.in</h2>
+{% for post in socialLinks.posts %}
+<a href="{{ post.url }}" target="_blank">
+    <img src="{{ post.image }}" alt="{{ post.alt }}" class="social-post">
+</a>
+{% endfor %}
+    </div>
+</section>

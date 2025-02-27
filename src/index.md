@@ -14,3 +14,4 @@ title: Tocho Fort Wayne | Authentic Mexican Food
 {% include "about.html" %}
 {% include "location.html" %}
 {% include "cta.html" %}
+{% include "social-cta.html" %}
