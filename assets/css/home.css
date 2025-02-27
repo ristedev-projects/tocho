@@ -364,16 +364,8 @@
     color: #fff;
 }
 
-.social-cta-link {
-    display: block;
+#social-cta a {
     text-decoration: none;
-}
-
-.social-cta-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0;
-    justify-items: center;
 }
 
 .social-post {
@@ -384,17 +376,5 @@
 }
 
 .social-post:hover {
-    transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
-    .social-cta-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .social-cta-grid {
-        grid-template-columns: 1fr;
-    }
+    transform: scale(1.05);
 }
