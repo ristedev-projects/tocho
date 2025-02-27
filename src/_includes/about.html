@@ -1,21 +1,19 @@
 <section id="about">
     <figure>
-        <img src="/assets/images/man-eating-taco.png" alt="Tocho's logo or representative image">
+        <img src="{{ about.image }}" alt="{{ about.alt }}">
     </figure>
 
-    <h1>About Tocho</h1>
+    <h1>{{ about.title }}</h1>
 
     <p class="description">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae veritatis repellat facere velit accusamus!
-        Itaque, mollitia consequuntur, ullam dignissimos placeat similique omnis odit veniam culpa eaque ab nemo nisi
-        accusantium.
+        {{ about.description }}
     </p>
 
     <div class="made-in-indiana-container">
-        <img src="/assets/images/icons/star.svg" class="star-icon" alt="Star">
+        <img src="{{ about.icon }}" class="star-icon" alt="Star">
         <p class="made-in-indiana">
-            Made in<br>Indiana
+            Made in<br>{{ about.made_in }}
         </p>
-        <img src="/assets/images/icons/star.svg" class="star-icon" alt="Star">
+        <img src="{{ about.icon }}" class="star-icon" alt="Star">
     </div>
 </section>
