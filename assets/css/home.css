@@ -289,6 +289,19 @@
     color: #00805F !important;
 }
 
+/* Define classes with specific background colors */
+.special-card.taco-fridays {
+    background-color: #FF1E00;
+}
+
+.special-card.tocho-box {
+    background-color: #E7E6D9;
+}
+
+.special-card.burrito-days {
+    background-color: #00805F;
+}
+
 @media (max-width: 768px) {
     .specials-container {
         flex-direction: column;

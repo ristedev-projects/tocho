@@ -2,28 +2,13 @@
     <h2 class="section-title">Specials</h2>
 
     <div class="specials-container">
-        <!-- Taco Fridays Card -->
-        <div class="special-card" style="background-color: #FF1E00;">
-            <h2>Taco<br>Fridays</h2>
-            <img src="/assets/images/tacos.png" alt="Tacos">
-            <p class="description">Enjoy taco platters with your favorite toppings every Friday!</p>
-            <p class="price">$0.00</p>
+        {% for special in specials.specials %}
+        <div class="special-card {{ special.name | slugify }}">
+            <h2>{{ special.name }}</h2>
+            <img src="{{ special.image }}" alt="{{ special.alt }}">
+            <p class="description">{{ special.description }}</p>
+            <p class="price">{{ special.price }}</p>
         </div>
-
-        <!-- Tocho Box Card -->
-        <div class="special-card" style="background-color: #E7E6D9;">
-            <h2>Tocho<br>Box</h2>
-            <img src="/assets/images/tocho-box.png" alt="Tocho Box">
-            <p class="description">A curated selection of delicious items, perfectly packed for any occasion.</p>
-            <p class="price">$0.00</p>
-        </div>
-
-        <!-- Burrito Days Card -->
-        <div class="special-card" style="background-color: #00805F;">
-            <h2>Burrito<br>Days</h2>
-            <p class="description">Savor our signature burritos, packed with fresh ingredients every day!</p>
-            <p class="price">$0.00</p>
-            <img src="/assets/images/burritos.png" alt="Burritos">
-        </div>
+        {% endfor %}
     </div>
 </section>
