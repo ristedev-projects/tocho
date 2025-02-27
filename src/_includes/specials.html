@@ -1,7 +1,6 @@
 <section id="specials">
     <h2 class="section-title">Specials</h2>
-
-    <div class="specials-container">
+    <div class="container">
         {% for special in specials.specials %}
         <div class="special-card {{ special.name | slugify }}">
             <h2>{{ special.name }}</h2>
