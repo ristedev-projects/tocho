@@ -3,7 +3,7 @@
     <div class="container">
         {% for special in specials.specials %}
         <div class="special-card {{ special.name | slugify }}">
-            <h2>{{ special.name }}</h2>
+            <h1>{{ special.name }}</h1>
             <img src="{{ special.image }}" alt="{{ special.alt }}">
             <p class="description">{{ special.description }}</p>
             <p class="price">{{ special.price }}</p>
