@@ -6,10 +6,23 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('/assets/images/hero.webp');
+    background-image: url('/assets/images/tocho-Interior.webp');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+}
+
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    z-index: 1;
 }
 
 /* Text Banner Section */
@@ -472,11 +485,34 @@
     padding: 5rem 0;
     background-color: #00805F;
     font-family: 'TT Globs Trial', sans-serif;
+    background-image: url('/assets/images/tocho-exterior.webp');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#social-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    z-index: 1;
+}
+
+#social-cta .container {
+    position: relative;
+    z-index: 2;
 }
 
 #social-cta h3 {
     margin-bottom: 1.5rem;
     color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #social-cta a {
