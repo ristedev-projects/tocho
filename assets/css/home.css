@@ -151,17 +151,25 @@
 
 @media (max-width: 768px) {
     #location {
-        flex-direction: column;
+        flex-direction: column;  /* Ensures vertical stacking */
         align-items: center;
         padding: 50px 15px;
     }
 
+    .container {
+        flex-direction: column;  /* Stack items in a column */
+        align-items: center;      /* Center the content */
+        width: 100%;
+    }
+
     .location-details {
         padding-right: 0;
+        text-align: center; /* Center the text inside location-details */
+        width: 100%; /* Ensure the details section takes full width */
     }
 
     .map {
-        width: 100%;
+        width: 100%; /* Ensure map takes full width */
         height: auto;
         margin: 0 15px;
     }
