@@ -2,12 +2,12 @@
     <h2 class="section-title">Specials</h2>
     <div class="container">
         {%- for special in specials.specials %}
-        <div class="special-card {{ special.name | slugify }}">
+        <a href="https://order.toasttab.com/online/tocho-4935-bluffton-road" class="special-card {{ special.name | slugify }}">
             <h1>{{ special.name }}</h1>
             <img src="{{ special.image }}" alt="{{ special.alt }}">
             <p class="description">{{ special.description }}</p>
             <p class="price">{{ special.price }}</p>
-        </div>
+        </a>
         {%- endfor %}
     </div>
 </section>

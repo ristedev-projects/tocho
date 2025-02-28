@@ -190,6 +190,13 @@
 .menu-item {
     padding: 20px;
     text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
 }
 
 .menu-item img {
@@ -472,6 +479,8 @@
     text-align: center;
     min-height: 550px;
     box-sizing: border-box;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .special-card h1 {
@@ -484,6 +493,7 @@
     line-height: 1.6;
     margin: 1rem 0;
     flex-grow: 1;
+    color: #fff;
 }
 
 .special-card img {
@@ -494,6 +504,7 @@
     font-size: 2rem;
     font-weight: bold;
     margin-top: auto;
+    color: #fff;
 }
 
 #specials .container .special-card:nth-of-type(2) h1,
