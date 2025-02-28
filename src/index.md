@@ -3,7 +3,6 @@ layout: default
 title: Tocho Fort Wayne | Authentic Mexican Food
 ---
 
-<section class="hero-image"></section>
 {% include "menu.html" %}
 {% include "specials.html" %}
 {% include "about.html" %}
