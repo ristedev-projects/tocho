@@ -9,9 +9,7 @@
     background-image: url('/assets/images/tocho-Interior.webp');
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
 }
-
 
 .hero-image::before {
     content: '';
@@ -23,6 +21,37 @@
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3px);
     z-index: 1;
+}
+
+.hero-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 2;
+}
+
+.view-menu, .order-online {
+    background-color: #FF1E00 !important; /* Primary red color */
+    color: white;
+    padding: 12px 35px;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    opacity: 0.9;
+}
+
+.view-menu:hover, .order-online:hover {
+    background-color: #006d4f !important;
 }
 
 /* Text Banner Section */
@@ -357,13 +386,41 @@
     padding: 5rem 0;
     background-color: #9DBA92;
     color: #fff;
+    background-image: url('/assets/images/backgrounds/papel.webp');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#specials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    z-index: 1;
+}
+
+#specials .container {
+    position: relative;
+    z-index: 2;
+}
+
+#specials .section-title, #specials .special-card {
+    position: relative;
+    z-index: 3;
 }
 
 #specials .section-title {
-    color: #00805F;
+    color: #ffffff;
     margin-bottom: 2rem;
     font-family: 'TT Globs Trial', sans-serif;
     text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #specials .container {
