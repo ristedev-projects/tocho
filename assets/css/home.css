@@ -35,7 +35,7 @@
 }
 
 .view-menu, .order-online {
-    background-color: #FF1E00 !important; /* Primary red color */
+    background-color: #FF1E00 !important;
     color: white;
     padding: 12px 35px;
     border-radius: 25px;
@@ -48,6 +48,17 @@
     height: auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     opacity: 0.9;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .view-menu, .order-online {
+        font-size: .8rem !important;
+    }
 }
 
 .view-menu:hover, .order-online:hover {
@@ -526,7 +537,7 @@
 
     #cta h1 {
         margin-top: 2rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #cta img {
