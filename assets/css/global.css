@@ -112,7 +112,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFCBDD;
+    background-color: #E7E6D9;
     font-family: 'TT Globs Trial', sans-serif;
 }
 
@@ -196,7 +196,7 @@ nav a:focus {
 }
 
 .mobile-menu a {
-    color: #FFCBDD;
+    color: #fff;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
@@ -206,10 +206,6 @@ nav a:focus {
 .mobile-menu.open a {
     display: block;
     margin-bottom: 20px;
-}
-
-.mobile-menu a:hover {
-    color: #FF1E00;
 }
 
 /* Hide Hamburger and Show Close Button when Menu is Open */
