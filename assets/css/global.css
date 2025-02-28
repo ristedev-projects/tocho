@@ -147,7 +147,7 @@ nav .container {
 }
 
 nav .logo img {
-    max-height: 50px;
+    max-height: 40px;
     width: auto;
     display: block;
 }
@@ -161,9 +161,8 @@ nav a {
     color: #FF1E00;
     text-decoration: none;
     font-size: 1rem;
-    font-weight: 500;
     transition: color 0.3s ease;
-    padding: 8px;
+    padding: 5px;
 }
 
 nav a:hover,
