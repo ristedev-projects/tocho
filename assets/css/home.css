@@ -12,6 +12,78 @@
     background-attachment: fixed;
 }
 
+/* Text Banner Section */
+#text-banner {
+    background-color: #00805F;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#text-banner .banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping to keep everything on one line */
+}
+
+#text-banner .flavor-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+#text-banner h5 {
+    margin-right: 10px;
+    font-family: 'TT Globs Trial', sans-serif;
+    white-space: nowrap;
+}
+
+#text-banner .flavor-item img {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+}
+
+#text-banner .banner-content .flavor-item:nth-last-child(1) {
+    display: none;
+}
+
+/* Remove star image from the last flavor-item */
+#text-banner .banner-content .flavor-item:nth-last-child(2) img {
+    display: none;
+}
+
+.star-icon {
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #text-banner .flavor-item {
+        margin: 0 5px;
+    }
+
+    #text-banner .flavor-item img {
+        width: 35px;
+    }
+    .star-icon {
+        display: block;
+        width: 35px;
+        height: auto;
+        margin-right: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Hide the last 3 flavor items */
+    #text-banner .banner-content .flavor-item:nth-last-child(1),
+    #text-banner .banner-content .flavor-item:nth-last-child(2),
+    #text-banner .banner-content .flavor-item:nth-last-child(3) {
+        display: none;
+    }
+}
+
 /* -----------------------------------------
    Menu Section
 ----------------------------------------- */
@@ -72,7 +144,7 @@
     }
 }
 
-.view-more, .join-now {
+.order-now {
     text-align: center;
 }
 
@@ -260,11 +332,6 @@
     margin-top: 30px;
     text-transform: uppercase;
     font-family: 'TT Globs Trial', sans-serif;
-}
-
-.star-icon {
-    width: 55px;
-    height: auto;
 }
 
 /* -----------------------------------------
