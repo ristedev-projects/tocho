@@ -53,22 +53,75 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar */
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 .5rem;
+    }
+}
+
+/* Headings */
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+}
+
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #FFCBDD;
     font-family: 'TT Globs Trial', sans-serif;
 }
 
-nav .nav-container {
+nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    padding: 15px 20px;
 }
 
 nav .logo img {
@@ -77,7 +130,7 @@ nav .logo img {
     display: block;
 }
 
-nav div {
+nav div.nav-links {
     display: flex;
     gap: 20px;
 }
@@ -85,7 +138,7 @@ nav div {
 nav a {
     color: #FF1E00;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     transition: color 0.3s ease;
     padding: 8px;
@@ -96,35 +149,100 @@ nav a:focus {
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    nav {
-        padding: 15px;
-    }
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
 
-    nav .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        padding: 0;
+.hamburger img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+/* Close Button Inside the Mobile Menu */
+.close-btn {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.close-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    background-color: #FF1E00;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: right 0.3s ease;
+}
+
+.mobile-menu.open {
+    right: 0;
+}
+
+.mobile-menu a {
+    color: #FFCBDD;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu.open a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.mobile-menu a:hover {
+    color: #FF1E00;
+}
+
+/* Hide Hamburger and Show Close Button when Menu is Open */
+.mobile-menu.open .hamburger {
+    display: none; /* Hide hamburger icon when menu is open */
+}
+
+.mobile-menu.open .close-btn {
+    display: block; /* Show close button when menu is open */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: row;
+        align-items: center;
     }
 
     nav .logo {
-        margin-bottom: 10px;
+        margin-bottom: 0;
     }
 
-    nav div {
-        width: 100%;
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 10px;
-        align-items: flex-start;
+    nav .logo img {
+        max-height: 30px;
     }
 
-    nav a {
-        font-size: 14px;
-        width: 100%;
-        padding: 10px;
-        text-align: left;
+    nav div.nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: auto;
     }
 }
 
@@ -132,13 +250,11 @@ nav a:focus {
 footer {
     background-color: #E7E6D9;
     color: #FF1E00;
-    padding: 40px 20px;
     text-align: left;
+    padding: 5rem 0;
 }
 
-footer .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
+footer .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -178,7 +294,6 @@ footer .footer-column h3 {
 }
 
 footer .footer-column p {
-    font-size: .8rem;
     margin-bottom: 5px;
     font-weight: 100;
 }
@@ -196,12 +311,22 @@ footer .footer-column a:hover {
     text-decoration: underline;
 }
 
+@media (min-width: 769px) and (max-width: 992px) {
+    footer .footer-logo img {
+        max-height: 225px;
+    }
+
+    footer .footer-columns {
+        margin: 50px 0 0 30px;
+    }
+}
+
 @media (max-width: 768px) {
     footer {
         text-align: center;
     }
 
-    footer .footer-container {
+    footer .container {
         flex-direction: column;
         align-items: center;
     }

@@ -1,16 +1,31 @@
 <nav aria-label="Main Navigation">
-    <div class="nav-container">
+    <div class="container">
         <div class="logo">
             <a href="/" title="Go to homepage">
                 <img src="/assets/images/logos/tocho-logo.png" alt="Tocho Logo" />
             </a>
         </div>
-        <div>
+        <div class="nav-links">
             <a href="#menu" title="View the menu">Menu</a>
             <a href="#specials" title="Check out our specials">Specials</a>
             <a href="#about" title="Learn more about us">About</a>
             <a href="#location" title="Find our location">Location</a>
-            <a href="#contact" title="Contact us">Contact</a>
+        </div>
+        <!-- Hamburger Button -->
+        <div class="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+            <img src="/assets/images/icons/menu.svg" alt="Open Menu" />
         </div>
     </div>
 </nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <!-- Close Button inside the menu -->
+    <div class="close-btn" aria-label="Close mobile menu">
+        <img src="/assets/images/icons/close.svg" alt="Close Menu" />
+    </div>
+    <a href="#menu" title="View the menu">Menu</a>
+    <a href="#specials" title="Check out our specials">Specials</a>
+    <a href="#about" title="Learn more about us">About</a>
+    <a href="#location" title="Find our location">Location</a>
+</div>
