@@ -229,7 +229,7 @@ nav.solid-background {
 
 .mobile-menu.open a {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 /* Hide Hamburger and Show Close Button when Menu is Open */
