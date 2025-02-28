@@ -506,13 +506,18 @@
     }
 }
 
-/* Hide the extra posts on small screens (max-width: 768px) */
 @media (max-width: 768px) {
     #social-cta .container {
         grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
     }
 
-    .container .social-post-container:nth-child(n+4) {
-        display: none; /* Hide 3rd and 4th items */
+    .container .social-post-container:nth-child(n+3) {
+        display: none; /* Hide the last 3 posts */
     }
+
+    .social-post {
+        width: 350px;
+        height: 350px;
+    }
+
 }
