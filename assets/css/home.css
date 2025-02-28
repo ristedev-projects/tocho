@@ -5,7 +5,7 @@
 .hero-image {
     width: 100%;
     height: 700px;
-    background-image: url('/assets/images/hero.png');
+    background-image: url('/assets/images/hero.webp');
     background-size: cover;
     background-position: center;
 }
@@ -283,7 +283,7 @@
     margin-top: auto;
 }
 
-#specials .container .special-card:nth-of-type(2) h2,
+#specials .container .special-card:nth-of-type(2) h1,
 #specials .container .special-card:nth-of-type(2) .description,
 #specials .container .special-card:nth-of-type(2) .price {
     color: #00805F !important;

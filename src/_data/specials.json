@@ -2,21 +2,21 @@
     "specials": [
         {
             "name": "Taco Fridays",
-            "image": "/assets/images/tacos.png",
+            "image": "/assets/images/tacos.webp",
             "alt": "Tacos",
             "description": "Enjoy taco platters with your favorite toppings every Friday!",
             "price": "$0.00"
         },
         {
             "name": "Tocho Box",
-            "image": "/assets/images/tocho-box.png",
+            "image": "/assets/images/tocho-box.webp",
             "alt": "Tocho Box",
             "description": "A curated selection of delicious items, perfectly packed for any occasion.",
             "price": "$0.00"
         },
         {
             "name": "Burrito Days",
-            "image": "/assets/images/burritos.png",
+            "image": "/assets/images/burritos.webp",
             "alt": "Burritos",
             "description": "Savor our signature burritos, packed with fresh ingredients every day!",
             "price": "$0.00"

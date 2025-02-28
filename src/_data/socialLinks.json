@@ -3,22 +3,22 @@
         {
             "url": "https://www.instagram.com/tocho.fw/",
             "alt": "Tacos served on a platter",
-            "image": "/assets/images/social-1.png"
+            "image": "/assets/images/social-1.webp"
         },
         {
             "url": "https://www.instagram.com/tocho.fw/",
             "alt": "Taco held in hand",
-            "image": "/assets/images/social-2.png"
+            "image": "/assets/images/social-2.webp"
         },
         {
             "url": "https://www.instagram.com/tocho.fw/",
             "alt": "Cheesy Burrito",
-            "image": "/assets/images/social-3.png"
+            "image": "/assets/images/social-3.webp"
         },
         {
             "url": "https://www.instagram.com/tocho.fw/",
             "alt": "Special Offer",
-            "image": "/assets/images/social-4.png"
+            "image": "/assets/images/social-4.webp"
         }
     ]
 }
