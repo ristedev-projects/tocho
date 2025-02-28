@@ -1,19 +1,21 @@
 <section id="about">
-    <figure>
-        <img src="{{ about.image }}" alt="{{ about.alt }}">
-    </figure>
+    <div class="container">
+        <figure>
+            <img src="{{ about.image }}" alt="{{ about.alt }}">
+        </figure>
 
-    <h1>{{ about.title }}</h1>
+        <h1>{{ about.title }}</h1>
 
-    <p class="description">
-        {{ about.description }}
-    </p>
-
-    <div class="made-in-indiana-container">
-        <img src="{{ about.icon }}" class="star-icon" alt="Star">
-        <p class="made-in-indiana">
-            Made in<br>{{ about.made_in }}
+        <p class="description">
+            {{ about.description }}
         </p>
-        <img src="{{ about.icon }}" class="star-icon" alt="Star">
+
+        <div class="made-in-indiana-container">
+            <img src="{{ about.icon }}" class="star-icon" alt="Star">
+            <p class="made-in-indiana">
+                Made in<br>{{ about.made_in }}
+            </p>
+            <img src="{{ about.icon }}" class="star-icon" alt="Star">
+        </div>
     </div>
 </section>
