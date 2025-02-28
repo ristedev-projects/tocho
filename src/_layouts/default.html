@@ -11,23 +11,6 @@
     </head>
     <body>
         {% include "navbar.html" %}
-        <section class="hero-image">
-            <div class="hero-buttons">
-                <a href="https://order.toasttab.com/online/tocho-4935-bluffton-road?diningOption=takeout&rwg_token=AJKvS9V3ZBuqYPxaOqluhVo2htNT1EGBEIW4qnttrqclfojfypVGPkHMx5YiPVPgAC7fSYxsuGxYGmNKZD1kNhqxbJGz-I0Kdw%3D%3D" class="button view-menu">View Menu</a>
-                <a href="https://order.toasttab.com/online/tocho-4935-bluffton-road?diningOption=takeout&rwg_token=AJKvS9V3ZBuqYPxaOqluhVo2htNT1EGBEIW4qnttrqclfojfypVGPkHMx5YiPVPgAC7fSYxsuGxYGmNKZD1kNhqxbJGz-I0Kdw%3D%3D" class="button order-online">Order Online</a>
-            </div>
-        </section>        
-        <section id="text-banner">
-            <div class="banner-content">
-                <img src="/assets/images/icons/star.svg" class="star-icon" alt="star icon">
-                {% for i in (1..text-banner.count) %}
-                    <div class="flavor-item">
-                        <h5>{{ text-banner.text }}</h5>
-                        <img src="{{ text-banner.icon }}" alt="star icon">
-                    </div>
-                {% endfor %}
-            </div>
-        </section>
         {{ content }}
         {% include "footer.html" %}
         <script src="/assets/js/script.js"></script>

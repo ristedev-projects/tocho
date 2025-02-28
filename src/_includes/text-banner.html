@@ -1,0 +1,11 @@
+<section id="text-banner">
+    <div class="banner-content">
+        <img src="/assets/images/icons/star.svg" class="star-icon" alt="star icon">
+        {%- for i in (1..text-banner.count) %}
+            <div class="flavor-item">
+                <h5>{{ text-banner.text }}</h5>
+                <img src="{{ text-banner.icon }}" alt="star icon">
+            </div>
+        {%- endfor %}
+    </div>
+</section>
