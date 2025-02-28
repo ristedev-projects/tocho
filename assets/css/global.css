@@ -63,7 +63,8 @@ body {
     margin: auto;
 }
 
-@media (max-width: 992px) {
+
+@media (max-width: 1200px) {
     nav .container {
         padding: 0 1rem;
     }
@@ -274,7 +275,7 @@ footer {
     background-color: #E7E6D9;
     color: #FF1E00;
     text-align: left;
-    padding: 5rem 0;
+    padding: 2.5rem 0 5rem;
 }
 
 footer .container {
