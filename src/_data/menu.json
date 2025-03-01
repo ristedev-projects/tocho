@@ -1,0 +1,28 @@
+{
+    "menuItems": [
+        {
+            "name": "Tacos",
+            "image": "/assets/images/menu/taco.webp",
+            "alt": "Meaty taco",
+            "url": "https://order.toasttab.com/online/tocho-4935-bluffton-road"
+        },
+        {
+            "name": "Burritos",
+            "image": "/assets/images/menu/burrito.webp",
+            "alt": "Cheesy Burrito",
+            "url": "https://order.toasttab.com/online/tocho-4935-bluffton-road"
+        },
+        {
+            "name": "Bowls",
+            "image": "/assets/images/menu/bowl.webp",
+            "alt": "Variety bowl",
+            "url": "https://order.toasttab.com/online/tocho-4935-bluffton-road"
+        },
+        {
+            "name": "Bebidas",
+            "image": "/assets/images/menu/bebida.webp",
+            "alt": "Bebidas",
+            "url": "https://order.toasttab.com/online/tocho-4935-bluffton-road"
+        }
+    ]
+}
