@@ -225,15 +225,17 @@ nav.solid-background {
 
 .mobile-menu a {
     color: #fff;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 1rem;
     text-decoration: none;
     transition: color 0.3s ease;
+    margin: 1.25rem 0;
+    padding: 6px 18px;
+    border: 1px solid #fff;
+    border-radius: 25px;
 }
 
 .mobile-menu.open a {
     display: block;
-    margin-bottom: 40px;
 }
 
 /* Hide Hamburger and Show Close Button when Menu is Open */
