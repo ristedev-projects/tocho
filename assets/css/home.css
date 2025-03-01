@@ -201,6 +201,7 @@
 
 .menu-item img {
     max-width: 100%;
+    height: 475px;
 }
 
 .menu-item h2 {
@@ -223,7 +224,8 @@
     }
 
     .menu-item img {
-        max-width: 40%;
+        max-width: 100%;
+        height: 250px;
     }
 
     .menu-item h2 {
