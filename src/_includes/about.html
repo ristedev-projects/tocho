@@ -1,7 +1,7 @@
 <section id="about">
     <div class="container">
         <figure>
-            <img src="{{ about.image }}" alt="{{ about.alt }}">
+            <img src="{{ about.image }}" alt="{{ about.alt }}" loading="lazy">
         </figure>
 
         <h1>{{ about.title }}</h1>
@@ -11,11 +11,11 @@
         </p>
 
         <div class="made-in-indiana-container">
-            <img src="{{ about.icon }}" class="star-icon" alt="Star">
+            <img src="{{ about.icon }}" class="star-icon" alt="Star" loading="lazy">
             <p class="made-in-indiana">
                 Made in<br>{{ about.made_in }}
             </p>
-            <img src="{{ about.icon }}" class="star-icon" alt="Star">
+            <img src="{{ about.icon }}" class="star-icon" alt="Star" loading="lazy">
         </div>
     </div>
 </section>

@@ -3,7 +3,7 @@
         <h3>Follow on @tocho.in</h3>
         {%- for post in socialLinks.posts %}
         <a href="{{ post.url }}" target="_blank" class="social-post-container">
-            <img src="{{ post.image }}" alt="{{ post.alt }}" class="social-post">
+            <img src="{{ post.image }}" alt="{{ post.alt }}" class="social-post" loading="lazy">
         </a>
         {%- endfor %}
     </div>
