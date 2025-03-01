@@ -2,6 +2,7 @@ module.exports = function(eleventyConfig) {
 
   // eleventyConfig.addPassthroughCopy({'static':'.'});
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("robots.txt");
 
   return {
     templateFormats: ['liquid', 'md', 'html'],
