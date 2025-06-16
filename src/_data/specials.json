@@ -1,24 +1,31 @@
 {
     "specials": [
         {
-            "name": "Taco Fridays",
-            "image": "/assets/images/tacos.webp",
+            "name": "Mexican Mondays",
+            "image": "/assets/images/burritos.webp",
             "alt": "Tacos",
-            "description": "Enjoy taco platters with your favorite toppings every Friday!",
+            "description": "Receive a free drink with the purchase of a bowl or burrito",
             "price": "$0.00"
         },
         {
-            "name": "Tocho Box",
-            "image": "/assets/images/tocho-box.webp",
+            "name": "Taco Tuesday",
+            "image": "/assets/images/tacos.webp",
             "alt": "Tocho Box",
-            "description": "A curated selection of delicious items, perfectly packed for any occasion.",
+            "description": "Purchase 3 tacos and get one free",
             "price": "$0.00"
         },
         {
-            "name": "Burrito Days",
+            "name": "Waynedale Wednesday",
             "image": "/assets/images/burritos.webp",
             "alt": "Burritos",
-            "description": "Savor our signature burritos, packed with fresh ingredients every day!",
+            "description": "Get a free side of chips and salsa with the purchase of any quesadilla",
+            "price": "$0.00"
+        },
+        {
+            "name": "Torta Thursday",
+            "image": "/assets/images/burritos.webp",
+            "alt": "Burritos",
+            "description": "Purchase a torta and get a free dessert of your choice",
             "price": "$0.00"
         }
     ]
